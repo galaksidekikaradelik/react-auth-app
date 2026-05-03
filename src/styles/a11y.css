@@ -1,4 +1,3 @@
-/* ── Skip Link — keyboard navigation ────────────────────────── */
 .skip-link {
   position: absolute;
   top: -100%;
@@ -20,7 +19,6 @@
   outline-offset: 2px;
 }
 
-/* ── Screen-reader only utility ──────────────────────────────── */
 .sr-only {
   position: absolute;
   width: 1px;
@@ -33,7 +31,6 @@
   border: 0;
 }
 
-/* ── Focus visible — keyboard users ─────────────────────────── */
 :focus-visible {
   outline: 2px solid var(--accent, #e11d48);
   outline-offset: 2px;
