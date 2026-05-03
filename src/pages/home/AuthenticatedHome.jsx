@@ -27,7 +27,6 @@ export function AuthenticatedHome() {
 
   return (
     <div className="fade-in">
-      {/* Welcome card */}
       <div className="home-welcome-card">
         <div style={{ display: 'flex', alignItems: 'center', gap: 20 }}>
           <div className="home-avatar" aria-hidden="true">{initials}</div>
@@ -43,7 +42,6 @@ export function AuthenticatedHome() {
         </span>
       </div>
 
-      {/* Stats */}
       <div className="home-stats-row" role="list">
         <div className="home-stat-card stagger-1" role="listitem">
           <div className="home-stat-icon" aria-hidden="true">👤</div>
@@ -62,7 +60,6 @@ export function AuthenticatedHome() {
         </div>
       </div>
 
-      {/* Quick actions */}
       <nav aria-label="Quick actions">
         <p className="home-section-title">Quick Actions</p>
         <div className="home-quick-actions">
@@ -72,7 +69,6 @@ export function AuthenticatedHome() {
         </div>
       </nav>
 
-      {/* Latest posts */}
       {postsLoading ? (
         <section aria-label="Loading latest posts" aria-busy="true">
           <p className="home-section-title">Latest Posts</p>
