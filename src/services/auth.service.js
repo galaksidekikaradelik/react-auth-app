@@ -1,6 +1,6 @@
 const TOKEN_KEY   = 'token'
 const EXPIRES_KEY = 'expiresAt'
-const TOKEN_TTL   = 1000 * 60 * 60 * 24 // 24 hours
+const TOKEN_TTL   = 1000 * 60 * 60 * 24 
 
 export const authService = {
   setToken(token) {
