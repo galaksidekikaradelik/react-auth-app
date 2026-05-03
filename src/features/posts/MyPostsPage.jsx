@@ -2,7 +2,7 @@ import { Link, useParams }   from 'react-router-dom'
 import { useMyPosts, useMyPostDetail } from './hooks/useMyPosts'
 import { readingTime, postNumber }     from '../../utils/postUtils'
 
-// ── Skeletons ────────────────────────────────────────────────
+
 function FeedSkeleton() {
   return (
     <div className="blog-feed" aria-busy="true" aria-label="Loading posts">
