@@ -1,4 +1,3 @@
-// src/features/static/StaticPages.jsx
 import { Link } from 'react-router-dom'
 
 const FEATURES = [
