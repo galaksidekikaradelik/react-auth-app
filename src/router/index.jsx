@@ -14,7 +14,6 @@ import { MyPostsPage, MyPostDetailPage } from '../features/posts/MyPostsPage'
 import { NotFoundPage, UnauthorizedErrorPage } from '../pages/ErrorPages'
 
 export const router = createBrowserRouter([
-  // 1. PUBLIC
   {
     element: <PublicLayout />,
     children: [
@@ -24,7 +23,6 @@ export const router = createBrowserRouter([
     ],
   },
 
-  // 2. GUEST ONLY
   {
     element: <GuestOnlyRoute />,
     children: [{
@@ -36,7 +34,6 @@ export const router = createBrowserRouter([
     }],
   },
 
-  // 3. PROTECTED
   {
     element: <ProtectedRoute />,
     children: [{
@@ -50,7 +47,6 @@ export const router = createBrowserRouter([
     }],
   },
 
-  // 4. ERRORS
   { path: '/unauthorized', element: <UnauthorizedErrorPage /> },
   { path: '*',             element: <NotFoundPage /> },
 ])
